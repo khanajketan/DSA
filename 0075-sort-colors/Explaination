@@ -1,0 +1,16 @@
+initialize i =0; j=0; k=n-1;
+
+here i for 0
+     j for 1
+     k for 2
+
+here we just checking the value of j
+if j is 0 
+    swap j and i
+    increament i and j
+if j is 1
+    just increament j
+if j is 2
+    swap j and k
+    decreament k;
+this follows until j <= k.
