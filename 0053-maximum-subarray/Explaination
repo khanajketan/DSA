@@ -1,0 +1,6 @@
+Here we need two variables
+Max = for maximum subarray sum until current index
+sum = subarray sum until it not becomes less than zero if sum is less than 0 then it becomes zero
+
+iterate through array add elements to sum , if sum is greater than max than max = sum
+if sum < 0 then sum becomes 0
