@@ -1,7 +1,7 @@
 class Solution {
     public void comSum(int[] arr, int sum, int target, int i, List<Integer> li, List<List<Integer>> ll){
         if(i >= arr.length){
-            if(sum == target)ll.add(new ArrayList<>(li));
+            //if(sum == target)ll.add(new ArrayList<>(li));
             return;
         }
 
@@ -10,7 +10,7 @@ class Solution {
             sum += arr[i];
             li.add(arr[i]);
             System.out.println(sum);
-           // if(sum == target)ll.add(li);
+            if(sum == target)ll.add(new ArrayList<>(li));
             comSum(arr, sum, target, i, li, ll);
             sum -= arr[i];
             li.remove(li.size() -1);
